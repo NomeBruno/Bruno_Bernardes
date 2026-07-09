@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #ff260082 transparent;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+.geral {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 10%;
+    background-color: rgba(11, 11, 11, 0.95);
+    border-bottom: 1px solid #222;
+}
+
+.titulo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.titulo span {
+    color: #ff2600;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ff2600;
+    color: white;
+}
+
+
+.secao-apresentacao {
+    width: 100%;
+    height: calc(80vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #401007;
+}
+
+.conteudo-home h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.conteudo-home .subtitulo {
+    font-size: 1.5rem;
+    color: #ff2600;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.conteudo-home .descricao {
+    max-width: 600px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.botao-cta {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #ff2600;
+    border: 2px solid #ff2600;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #ff2600;
+    color: white;
+}
+
+
+.titulo-secao {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 2px solid #ff2600;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+.secao-projetos {
+    width: 100%;
+    max-width: 1200px;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.grid-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-projeto {
+    background-color: #161616;
+    border: 1px solid #222;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    border-color: #ff2600;
+}
+
+.capa-projeto {
+    width: 100%;
+    height: 180px;
+    background-color: #333;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-projeto h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card-projeto p {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.card-projeto a {
+    color: #ff2600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fa-paw{
+    color: #10b981;
+}
+
+.card-projeto:hover .capa-projeto img {
+    transform: scale(1.1);
+}
+
+.secao-contato {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1e1d1d;
+}
+
+.secao-contato p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.links-contato a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ff2600;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.links-contato a:hover {
+    color: #ff2600;
+}
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #111;
+}
