@@ -150,3 +150,51 @@ li {
     letter-spacing: -0.5px;
     margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+    .geral {
+        /* Muda o layout de lado a lado para empilhado (um em cima do outro) */
+        flex-direction: column;
+    }
+
+    .container-lateral {
+        width: 100%;
+        margin: 0; 
+        padding: 30px 20px;
+        /* Remove as bordas laterais e coloca uma borda inferior para separar do conteúdo */
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid #000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px 15px; 
+    }
+
+    .circulo-avatar {
+        width: 120px; 
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 26px; 
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .circulo-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
